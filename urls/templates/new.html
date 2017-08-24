@@ -1,0 +1,6 @@
+<form method='POST' action="{% url 'create_url' %}">
+  {% csrf_token %}
+  {{ URLForm.as_p }}
+
+  <button>get minurl</button>
+</form>
